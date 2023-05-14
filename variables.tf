@@ -30,6 +30,15 @@ variable "database_public_cidr" {
 variable "database_subnet_names" {
   default = ["database-a","database-b"]
 }
+variable "rds_security_group_name" {
+  default = "timing"
+}
+variable "rds_security_desc" {
+  default = "this is attached to timing rds"
+}
+variable "ingress-cidr" {
+  default = []
+}
 
 
 
